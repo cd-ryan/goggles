@@ -3,6 +3,8 @@
 ! public: false
 ! author: Ryan Horne
 ! avatar: #ffa71a
+! homepage: https://github.com/cd-ryan/goggles
+! license: MIT
 $discard,site=investor.pinterestinc.com
 $discard,site=pinterest.at
 $discard,site=pinterest.ca

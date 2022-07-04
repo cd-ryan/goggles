@@ -1,0 +1,3 @@
+[submodule "brave-goggles-quickstart"]
+	path = brave-goggles-quickstart
+	url = https://github.com/brave/goggles-quickstart.git
