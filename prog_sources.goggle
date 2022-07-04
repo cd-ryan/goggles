@@ -30,8 +30,9 @@ $boost=3,site=docs.aws.amazon.com
 $boost=2,site=wiki.archlinux.org
 $boost=2,site=realpython.com
 $boost=2,site=rancher.com
-$boost=2,site=readthedocs.io
-|https://*.readthedocs.io/*$boost=2
+! $boost=2,site=readthedocs.io
+$boost=2,site=readthedocs.io,inurl
+! |https://*.readthedocs.io/*$boost=2
 $boost=2,site=pythonhosted.org
 ! $boost=2,site=
 
