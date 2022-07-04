@@ -6,6 +6,9 @@
 ! homepage: https://github.com/cd-ryan/goggles
 ! license: MIT
 
+! generic downrank?
+$downrank
+
 ! official sources
 $boost=5,site=python.org
 $boost=5,site=pypi.org
