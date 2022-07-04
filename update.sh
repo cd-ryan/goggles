@@ -10,7 +10,7 @@ brave-goggles-quickstart/goggles/copycats_removal.goggle"
 MY_GOGGLES="
 rm_bad.goggle
 prog_sources.goggle
-no_right.goggle"
+no_rightwing.goggle"
 
 # start lists
 for GOGGLE in $MY_GOGGLES; do
@@ -18,9 +18,9 @@ for GOGGLE in $MY_GOGGLES; do
 done
 
 # reverse the all sides' github "right" list so all of conservative/right-wing results are discarded
-echo "! reversed \$boost -> \$discard from source: https://raw.githubusercontent.com/allsides-news/brave-goggles/main/right.goggles" >> "$SCRIPTDIR"/no_right.goggle
-"$SCRIPTDIR"/rev_right.py >> "$SCRIPTDIR"/no_right.goggle
-echo "" >> "$SCRIPTDIR"/no_right.goggle
+echo "! reversed \$boost -> \$discard from source: https://raw.githubusercontent.com/allsides-news/brave-goggles/main/right.goggles" >> "$SCRIPTDIR"/no_rightwing.goggle
+"$SCRIPTDIR"/rev_right.py >> "$SCRIPTDIR"/no_rightwing.goggle
+echo "" >> "$SCRIPTDIR"/no_rightwing.goggle
 
 # generic, add no_pinterest and copycats_removal
 for GOGGLE in $MY_GOGGLES; do
