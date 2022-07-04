@@ -10,7 +10,7 @@ SCRIPTDIR=$(dirname "$0")
 SCRIPTDIR=$(readlink -f "$SCRIPTDIR")
 cd "$SCRIPTDIR" || exit 1
 
-rm "$SCRIPTDIR"/*.goggle.*
+rm "$SCRIPTDIR"/*.goggle*
 cat "$SCRIPTDIR"/rm_bad_base.txt > "$SCRIPTDIR"/rm_bad.goggle
 
 for LIST in $LISTS; do
@@ -19,3 +19,5 @@ for LIST in $LISTS; do
 done
 
 cd - >/dev/null || exit 1
+
+echo "hard coded URL:" 'https%3A%2F%2Fraw.githubusercontent.com%2Fcd-ryan%2Fgoggles%2Fmain%2Frm_bad.goggle'
