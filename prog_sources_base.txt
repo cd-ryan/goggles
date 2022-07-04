@@ -7,7 +7,7 @@
 ! license: MIT
 
 ! generic downrank?
-$downrank
+$downrank=1
 
 ! official sources
 $boost=5,site=python.org
@@ -29,6 +29,8 @@ $boost=2,site=rancher.com
 ! highly personal opinions here:
 ! dockerhub sucks now
 $boost=1,site=gallery.ecr.aws
+! medium articles are generally worthless compared to even generic social media sites, e.g. reddit.com
+$downrank=2,site=medium.com
 
 ! end of prog_sources_base.txt
 

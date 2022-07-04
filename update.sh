@@ -20,6 +20,14 @@ for GOGGLE in $MY_GOGGLES; do
 	done
 done
 
+if [ "$#" -gt 0 ]; then
+	cd "$SCRIPTDIR" || exit 1
+	git add . || exit 1
+	git commit "$@" || exit 1
+	git push || exit 1
+	cd - >/dev/null || exit 1
+fi
+
 BASEURL="https://raw.githubusercontent.com/cd-ryan/goggles/main"
 echo "raw URLs:"
 for GOGGLE in $MY_GOGGLES; do
