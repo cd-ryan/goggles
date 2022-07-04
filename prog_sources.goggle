@@ -7,43 +7,29 @@
 ! license: MIT
 
 ! official sources
-$boost=3,site=python.org
-|https://*.python.org^$boost=3
-$boost=3,site=pypi.org
-$boost=3,site=go.dev
-|https://*.go.dev^$boost=3
-$boost=3,site=kubernetes.io
-|https://*.kubernetes.io^$boost=3
-$boost=3,site=man.openbsd.org
-$boost=3,site=ruby-lang.org
-|https://*.ruby-lang.org^$boost=3
-|https://docs.microsoft.com/*/azure^$boost=3
-$boost=3,site=docs.aws.amazon.com
-|https://*.cloud.google.com/docs^$boost=3
-|https://*.backblaze.com/b2/docs^$boost=3
+$boost=2,site=python.org
+$boost=2,site=pypi.org
+$boost=2,site=go.dev
+$boost=2,site=kubernetes.io
+|https://docs.microsoft.com/*/azure^$boost=2
+$boost=2,site=docs.aws.amazon.com
+|https://*.cloud.google.com/docs^$boost=2
+|https://*.backblaze.com/b2/docs^$boost=2
 
-! highly generic attempts to match official sources
-|https://docs.$boost=1
-|https://man.$boost=1
-
-! unofficial sources, but still good if there's a matching result
-$boost=2,site=wiki.archlinux.org
-$boost=2,site=realpython.com
-$boost=2,site=rancher.com
-! $boost=2,site=readthedocs.io
-$boost=2,site=readthedocs.io,inurl
-! |https://*.readthedocs.io/*$boost=2
-$boost=2,site=pythonhosted.org
-! $boost=2,site=
-
-! highly specific misc sources, probably not great but maybe better than your average result
-/community/tutorials*$boost=1,site=digitalocean.com
+! unofficial sources, but still good if there's a matching result generally
+$boost=1,site=wiki.archlinux.org
+$boost=1,site=realpython.com
+$boost=1,site=rancher.com
+$boost=1,site=readthedocs.io
+$boost=1,site=pythonhosted.org
 
 ! highly personal opinions here:
 ! dockerhub sucks now
 $boost=1,site=gallery.ecr.aws
 
-! end of _base.txt
+! end of prog_sources_base.txt
+
+! from subrepo path: brave-goggles-quickstart/goggles/no_pinterest.goggle
 $discard,site=investor.pinterestinc.com
 $discard,site=pinterest.at
 $discard,site=pinterest.ca
@@ -66,6 +52,8 @@ $discard,site=pinterest.pt
 $discard,site=pinterest.ru
 $discard,site=pinterestcareers.com
 /pinterest/$discard,site=instagram.com
+
+! from subrepo path: brave-goggles-quickstart/goggles/copycats_removal.goggle
 $discard,site=alltodev.com
 $discard,site=amuddycup.com
 $discard,site=answacode.com
@@ -255,3 +243,4 @@ $discard,site=pythonissues.com
 $discard,site=pythonrepo.com
 $discard,site=reposhub.com
 $discard,site=wenyanet.com
+

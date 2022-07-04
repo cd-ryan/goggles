@@ -5,3 +5,6 @@
 ! avatar: #ffa71a
 ! homepage: https://github.com/cd-ryan/goggles
 ! license: MIT
+
+! end of rm_bad_base.txt
+

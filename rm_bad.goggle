@@ -5,6 +5,10 @@
 ! avatar: #ffa71a
 ! homepage: https://github.com/cd-ryan/goggles
 ! license: MIT
+
+! end of rm_bad_base.txt
+
+! from subrepo path: brave-goggles-quickstart/goggles/no_pinterest.goggle
 $discard,site=investor.pinterestinc.com
 $discard,site=pinterest.at
 $discard,site=pinterest.ca
@@ -27,6 +31,8 @@ $discard,site=pinterest.pt
 $discard,site=pinterest.ru
 $discard,site=pinterestcareers.com
 /pinterest/$discard,site=instagram.com
+
+! from subrepo path: brave-goggles-quickstart/goggles/copycats_removal.goggle
 $discard,site=alltodev.com
 $discard,site=amuddycup.com
 $discard,site=answacode.com
@@ -216,3 +222,4 @@ $discard,site=pythonissues.com
 $discard,site=pythonrepo.com
 $discard,site=reposhub.com
 $discard,site=wenyanet.com
+
