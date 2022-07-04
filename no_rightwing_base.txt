@@ -1,4 +1,4 @@
-! name: no right
+! name: no rightwing
 ! description: removes conservative/right-wing media results and combines with my "rm_bad" goggles
 ! public: false
 ! author: Ryan Horne
