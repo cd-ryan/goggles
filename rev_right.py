@@ -10,7 +10,7 @@ try:
         'https://raw.githubusercontent.com/allsides-news/brave-goggles/main/right.goggles'],
         stderr=subprocess.DEVNULL)
 except subprocess.CalledProcessError:
-    sys.stderr.write('unable to download right.goggles\nis curl installed?')
+    sys.stderr.write('unable to download right.goggles\nis curl installed?\n')
     raise
 
 response = str(response.decode('utf-8')) if isinstance(response, bytes) else str(response)
