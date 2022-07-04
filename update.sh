@@ -26,6 +26,7 @@ if [ "$#" -gt 0 ]; then
 	git commit "$@" || exit 1
 	git push || exit 1
 	cd - >/dev/null || exit 1
+	echo
 fi
 
 BASEURL="https://raw.githubusercontent.com/cd-ryan/goggles/main"
