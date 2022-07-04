@@ -14,7 +14,7 @@ no_rightwing.goggle"
 
 # start lists
 for GOGGLE in $MY_GOGGLES; do
-	cat "$SCRIPTDIR"/"${GOGGLE%.*}_base.txt" > "$SCRIPTDIR"/"$GOGGLE"
+	cat "$SCRIPTDIR"/"${GOGGLE%.*}.base.goggle" > "$SCRIPTDIR"/"$GOGGLE"
 done
 
 # reverse the all sides' github "right" list so all of conservative/right-wing results are discarded

@@ -1,10 +1,10 @@
 ! name: no rightwing
-! description: removes conservative/right-wing media results and combines with my "rm_bad" goggles
+! description: removes conservative/right-wing media results and combines with my "rm_bad" goggle
 ! public: false
 ! author: Ryan Horne
 ! avatar: #1464df
 ! homepage: https://github.com/cd-ryan/goggles
 ! license: MIT
 
-! end of rm_right_base.txt
+! end of no_rightwing.base.goggle
 

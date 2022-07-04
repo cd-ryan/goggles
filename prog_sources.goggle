@@ -32,7 +32,7 @@ $boost=1,site=gallery.ecr.aws
 ! medium articles are generally worthless compared to even generic social media sites, e.g. reddit.com
 $downrank=2,site=medium.com
 
-! end of prog_sources_base.txt
+! end of prog_sources.base.goggle
 
 ! from subrepo path: brave-goggles-quickstart/goggles/no_pinterest.goggle
 $discard,site=investor.pinterestinc.com
