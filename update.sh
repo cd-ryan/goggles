@@ -26,5 +26,5 @@ for GOGGLE in $MY_GOGGLES; do
 	echo "$BASEURL/$GOGGLE"
 done
 
-echo; echo "create link: https://search.brave.com/goggles/create"
-
+echo; echo "create link"
+echo "https://search.brave.com/goggles/create"
