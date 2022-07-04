@@ -1,0 +1,5 @@
+! name: rm bad
+! description: combines various lists to remove "copycat" content and terrible websites (e.g. pinterest) from search results
+! public: false
+! author: Ryan Horne
+! avatar: #ffa71a
