@@ -15,7 +15,8 @@ $boost=1,site=pypi.org
 $boost=1,site=readthedocs.io
 $boost=1,site=pythonhosted.org
 $boost=1,site=wiki.archlinux.org
-$boost=1,site=realpython.com
+! if there is a realpython.com match, it will be a great tutorial
+$boost=2,site=realpython.com
 
 ! highly personal opinions here:
 ! dockerhub sucks now
