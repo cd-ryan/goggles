@@ -7,21 +7,15 @@
 ! license: MIT
 
 ! official sources
-$boost=3,site=python.org
-$boost=3,site=pypi.org
-$boost=3,site=go.dev
-$boost=2,site=kubernetes.io
-|https://docs.microsoft.com/*/azure^$boost=1
-$boost=1,site=docs.aws.amazon.com
-|https://*.cloud.google.com/docs^$boost=1
-|https://*.backblaze.com/b2/docs^$boost=1
+$boost=2,site=python.org
+$boost=2,site=go.dev
 
 ! unofficial sources, but still good if there's a matching result generally
-$boost=2,site=readthedocs.io
-$boost=2,site=pythonhosted.org
+$boost=1,site=pypi.org
+$boost=1,site=readthedocs.io
+$boost=1,site=pythonhosted.org
 $boost=1,site=wiki.archlinux.org
 $boost=1,site=realpython.com
-$boost=1,site=rancher.com
 
 ! highly personal opinions here:
 ! dockerhub sucks now
