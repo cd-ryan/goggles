@@ -1,11 +1,16 @@
 from flask import Flask, render_template_string, request
 import tldextract
 from pathlib import Path
+import requests
 import subprocess
 
 app = Flask(__name__)
 goggles = Path("bad.goggle")
 goggles.touch()
+# url PARAMETER must be url encoded
+update_url = ("https://search.brave.com/api/goggles/submit?url="
+              "https%3A%2F%2Fraw.githubusercontent.com%2F"
+              f"cd-ryan%2Fgoggles%2Fmaster%2F{goggles.name}")
 
 try:
     _ = subprocess.check_output(["which", "git"])
@@ -72,6 +77,10 @@ def add_to_goggles(url: str) -> str:
                     f.write(f"{line}\n")
             return (f"error adding URL to list, rc: {p.returncode},"
                     f" stderr: {err}")
+
+    response = requests.post(url=update_url)
+    if not response.ok:
+        return f'error from goggles API: {response.text}'
 
     return (f'Successfully added URL "{url}" to list,'
             f" instruction: {instruction}")
