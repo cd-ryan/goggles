@@ -2,6 +2,7 @@ from flask import Flask, render_template_string, request
 import tldextract
 from pathlib import Path
 import requests
+import socket
 import subprocess
 
 app = Flask(__name__)
@@ -31,7 +32,12 @@ def add_to_goggles(url: str) -> str:
     if not url.strip():
         return "url is empty"
     tld_info = tldextract.extract(url)
-    instruction = f"$discard,site={tld_info.domain}.{tld_info.suffix}"
+    domain = f"{tld_info.domain}.{tld_info.suffix}"
+    try:
+        socket.getaddrinfo(domain, 80)
+    except socket.gaierror:
+        return "invalid domain: can't look up in DNS"
+    instruction = f"$discard,site={domain}"
 
     lines = []
     version = None
