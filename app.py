@@ -28,6 +28,8 @@ def main():
 
 
 def add_to_goggles(url: str) -> str:
+    if not url.strip():
+        return "url is empty"
     tld_info = tldextract.extract(url)
     instruction = f"$discard,site={tld_info.domain}.{tld_info.suffix}"
 
