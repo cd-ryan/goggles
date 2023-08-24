@@ -83,7 +83,7 @@ def web_form() -> str:
 <br />
 <form method="post">
 <input type="text" name="url" placeholder="URL"
-       value="{{ request.form['url'] }}"></input>
+       value="{{ request.form['url'] }}" style="width: 600px;"></input>
 <br />
 <button type="submit">Submit</button>
 </form>

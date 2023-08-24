@@ -3,6 +3,7 @@
 ! public: false
 ! author: Ryan Horne
 ! license: MIT
-! version: 1
+! version: 2
 
 $discard,site=androidpolice.com
+$discard,site=digitalocean.com
